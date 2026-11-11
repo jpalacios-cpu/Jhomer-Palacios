@@ -2,65 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jhomer Palacios | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h2>Jhomer Palacios</h2>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <h2>JHOMER<span>.</span></h2>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#values">Work Ethics</a></li>
+        </ul>
     </nav>
 </header>
 
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+        <h1>Hello, I'm <span>Jhomer Palacios</span></h1>
+        <h2>BSIT Student | Future IT Professional</h2>
+        <p>
+            I am passionate about technology, programming,
+            web development, and creating innovative digital projects.
+        </p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+</section>
+
 <section id="about">
-    <h1>Hello, I'm Jhomer Palacios</h1>
-    <h2>BSIT Student</h2>
-    <p>
-        Welcome to my personal portfolio.
-        I am interested in programming,
-        web development, and technology.
-    </p>
+    <h2 class="section-title">About Me</h2>
+    <div class="content">
+        <h3>Who Am I?</h3>
+        <p>
+            My name is Jhomer Palacios, and I am currently a
+            Bachelor of Science in Information Technology student
+            in BSIT 1-D. I am interested in learning how technology
+            works and how it can be used to solve everyday problems.
+            I enjoy exploring programming, web development, and
+            digital design. As I continue my academic journey, I
+            want to improve my technical abilities, gain practical
+            experience, and create projects that are useful and
+            meaningful. I believe that becoming a good IT
+            professional takes patience, creativity, teamwork,
+            and continuous learning.
+        </p>
+    </div>
 </section>
 
 <section id="education">
-    <h2>Academic Background</h2>
-    <p>Bachelor of Science in Information Technology</p>
-    <p>BSIT 1-D</p>
+    <h2 class="section-title">Academic Background</h2>
+    <div class="card">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>BSIT 1-D</p>
+        <p>School: [Your College / University]</p>
+        <p>Status: Currently Studying</p>
+    </div>
+    <div class="card">
+        <h3>Senior High School</h3>
+        <p>School: [Your Senior High School]</p>
+        <p>Strand: [Your Strand]</p>
+        <p>Year Graduated: [Year]</p>
+    </div>
+</section>
+
+<section id="achievements">
+    <h2 class="section-title">Notable Achievements</h2>
+    <div class="card">
+        <h3>Academic Development</h3>
+        <p>Continuously learning and developing my knowledge in Information Technology.</p>
+    </div>
+    <div class="card">
+        <h3>Programming Activities</h3>
+        <p>Practicing programming and problem-solving through academic exercises.</p>
+    </div>
+    <div class="card">
+        <h3>Personal Growth</h3>
+        <p>Improving my communication, creativity, and teamwork skills.</p>
+    </div>
 </section>
 
 <section id="skills">
-    <h2>My Skills</h2>
-    <p>HTML, CSS, C++, JavaScript</p>
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-container">
+        <div class="card">
+            <h3>Technical Skills</h3>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>C++</p>
+            <p>JavaScript</p>
+            <p>GitHub</p>
+        </div>
+        <div class="card">
+            <h3>Soft Skills</h3>
+            <p>Problem Solving</p>
+            <p>Teamwork</p>
+            <p>Communication</p>
+            <p>Creativity</p>
+            <p>Time Management</p>
+        </div>
+    </div>
 </section>
 
 <section id="projects">
-    <h2>My Projects</h2>
-    <p>Personal Web Portfolio</p>
-    <p>C++ Programming Exercises</p>
+    <h2 class="section-title">My Projects & Research</h2>
+    <div class="card">
+        <h3>Project 1: Personal Web Portfolio</h3>
+        <p>
+            A personal website that presents my background,
+            education, skills, and projects.
+        </p>
+        <p>Technologies: HTML, CSS, JavaScript</p>
+    </div>
+    <div class="card">
+        <h3>Project 2: C++ Programming Exercises</h3>
+        <p>
+            Beginner programming exercises designed to improve
+            logical thinking and problem-solving skills.
+        </p>
+        <p>Technology: C++</p>
+    </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: your-email@example.com</p>
+<section id="values">
+    <h2 class="section-title">Work Ethics & Core Values</h2>
+    <div class="card">
+        <h3>My Core Values</h3>
+        <p>1. Responsibility – I complete my tasks properly.</p>
+        <p>2. Honesty – I value honesty in my work.</p>
+        <p>3. Teamwork – I respect and cooperate with others.</p>
+        <p>4. Discipline – I manage my time and responsibilities.</p>
+        <p>5. Continuous Learning – I always seek improvement.</p>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 Jhomer Palacios</p>
+    <h3>Jhomer Palacios</h3>
+    <p>BSIT 1-D | Personal Portfolio</p>
+    <p>© 2026 All Rights Reserved.</p>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
